@@ -111,6 +111,60 @@ a{
 a:hover{
   opacity: 0.5;
 }
+@media screen and (min-width: 1024px) {
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-one,.card-two,.card-two,.card-three,.card-four{
+    height: 270px;
+  }
+  .card-container{
+    display: grid;
+    grid-template-areas: 
+    'one one two five'
+    'three four four five'
+    ;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+  .card-one{
+    grid-area: one;
+    width: 500px;
+    background-position-x: 430px;
+    height: auto;
+  }
+  .card-two{
+    grid-area: two;
+    width: 200px;
+    height: auto;
+  }
+  .card-three{
+    grid-area: three;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 70px;
+    height: auto;
+  }
+  .card-four{
+    grid-area: four;
+    margin-bottom: 70px;
+    margin-top: 0;
+    width: 500px;
+    height: auto;
+  }
+  .card-five{
+    grid-area: five;
+    margin-bottom: 0;
+    width: 220px;
+    /* height: 560px; */
+    height: 674px;
+  }
+  .card-two, .card-five{
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1280px){
   .main{
     display: flex;
